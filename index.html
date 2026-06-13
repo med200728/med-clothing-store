@@ -4,61 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Med El Jabbari | Clothing Store</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4f4f4;color:#222}
-header{background:#111;color:#fff;padding:20px 50px;display:flex;justify-content:space-between;align-items:center}
-header h1{color:#f5c542}
-nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:bold}
-.hero{height:420px;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("3red.jpg") center/cover;display:flex;justify-content:center;align-items:center;text-align:center;color:#fff}
-.btn{background:#f5c542;color:#111;padding:12px 25px;text-decoration:none;border-radius:25px;font-weight:bold}
-.products,.contact{padding:50px;text-align:center}
-.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
-.card{background:#fff;border-radius:15px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-.card img{width:100%;height:260px;object-fit:cover;border-radius:12px}
-.about{background:#111;color:#fff;padding:50px;text-align:center}
-footer{background:#111;color:#fff;text-align:center;padding:15px}
-</style>
-</head>
-<body>
-<header>
-<h1>Med El Jabbari</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#products">Clothes</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
 
-<section class="hero">
-<div>
-<h2>New Fashion Collection</h2>
-<p>Discover stylish clothes with Med El Jabbari</p>
-<a href="#products" class="btn">Shop Now</a>
-</div>
-</section>
+body{
+  background:#f5f5f5;
+  color:#222;
+}
 
-<section class="products" id="products">
-<h2>Our Clothes</h2>
-<div class="product-grid">
-<div class="card">
-<img src="3red.jpg" alt="T-Shirt">
-<h3>Classic T-Shirt</h3>
-<p>120 MAD</p>
-</div>
-</div>
-</section>
+header{
+  background:#111;
+  color:white;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
 
-<section class="about" id="about">
-<h2>About Us</h2>
-<p>Modern clothing brand offering stylish and affordable fashion.</p>
-</section>
+.logo{
+  color:#f5c542;
+  font-size:28px;
+  font-weight:bold;
+}
 
-<footer>
-<p>© 2026 Med El Jabbari. All rights reserved.</p>
-</footer>
-<style>
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#f5c542;
+}
+
+.hero{
+  height:90vh;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("3red.jpg") center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:55px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  background:#f5c542;
+  color:#111;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.products{
+  padding:70px 8%;
+  text-align:center;
+}
+
+.products h2{
+  font-size:38px;
+  margin-bottom:35px;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.card h3{
+  margin:15px 0 8px;
+  font-size:22px;
+}
+
+.price{
+  color:#e67e22;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.about{
+  background:#111;
+  color:white;
+  padding:70px 8%;
+  text-align:center;
+}
+
+.about h2{
+  color:#f5c542;
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.about p{
+  max-width:700px;
+  margin:auto;
+  line-height:1.7;
+}
+
+.contact{
+  padding:70px 8%;
+  text-align:center;
+  background:#fff;
+}
+
+.contact h2{
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.contact p{
+  margin-bottom:25px;
+}
+
+.contact a{
+  background:#25D366;
+  color:white;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:18px;
+}
+
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -69,8 +185,104 @@ footer{background:#111;color:#fff;text-align:center;padding:15px}
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
+  z-index:2000;
+}
+
+@media(max-width:700px){
+  header{
+    flex-direction:column;
+  }
+
+  nav{
+    margin-top:15px;
+  }
+
+  nav a{
+    margin:8px;
+    display:inline-block;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
 }
 </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Med El Jabbari</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Clothes</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>New Fashion Collection</h1>
+    <p>Stylish clothes with good prices in Morocco</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h2>Our Clothes</h2>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="3red.jpg" alt="T-Shirt">
+      <h3>Classic T-Shirt</h3>
+      <p class="price">120 MAD</p>
+    </div>
+
+    <div class="card">
+      <img src="3red.jpg" alt="Jacket">
+      <h3>Black Jacket</h3>
+      <p class="price">250 MAD</p>
+    </div>
+
+    <div class="card">
+      <img src="3red.jpg" alt="Shoes">
+      <h3>Sport Shoes</h3>
+      <p class="price">350 MAD</p>
+    </div>
+
+    <div class="card">
+      <img src="3red.jpg" alt="Outfit">
+      <h3>Streetwear Outfit</h3>
+      <p class="price">600 MAD</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    Med El Jabbari is a modern clothing store offering stylish,
+    comfortable and affordable fashion for everyone.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Order Now</h2>
+  <p>Click below to order directly on WhatsApp.</p>
+  <a href="https://wa.me/212681414433" target="_blank">Order on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Med El Jabbari. All rights reserved.</p>
+</footer>
+
 <a href="https://wa.me/212681414433" target="_blank" class="whatsapp">
-  💬 Order on WhatsApp
+  💬 WhatsApp
 </a>
+
+</body>
+</html>
