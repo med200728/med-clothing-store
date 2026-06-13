@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Med El Jabbari | Clothing Store</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#222}
+header{background:#111;color:#fff;padding:20px 50px;display:flex;justify-content:space-between;align-items:center}
+header h1{color:#f5c542}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:bold}
+.hero{height:420px;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("3red.jpg") center/cover;display:flex;justify-content:center;align-items:center;text-align:center;color:#fff}
+.btn{background:#f5c542;color:#111;padding:12px 25px;text-decoration:none;border-radius:25px;font-weight:bold}
+.products,.contact{padding:50px;text-align:center}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.card{background:#fff;border-radius:15px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+.card img{width:100%;height:260px;object-fit:cover;border-radius:12px}
+.about{background:#111;color:#fff;padding:50px;text-align:center}
+footer{background:#111;color:#fff;text-align:center;padding:15px}
+</style>
+</head>
+<body>
+<header>
+<h1>Med El Jabbari</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Clothes</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>New Fashion Collection</h2>
+<p>Discover stylish clothes with Med El Jabbari</p>
+<a href="#products" class="btn">Shop Now</a>
+</div>
+</section>
+
+<section class="products" id="products">
+<h2>Our Clothes</h2>
+<div class="product-grid">
+<div class="card">
+<img src="3red.jpg" alt="T-Shirt">
+<h3>Classic T-Shirt</h3>
+<p>120 MAD</p>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About Us</h2>
+<p>Modern clothing brand offering stylish and affordable fashion.</p>
+</section>
+
+<footer>
+<p>© 2026 Med El Jabbari. All rights reserved.</p>
+</footer>
+</body>
+</html>
